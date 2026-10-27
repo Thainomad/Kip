@@ -6,7 +6,7 @@ a{color:#B3700F}nav{display:flex;gap:18px;align-items:center;margin-bottom:24px;
 @media(prefers-color-scheme:dark){body{background:#12162E;color:#E9ECFF}nav .logo{color:#E9ECFF}.card{background:#1E2448}a{color:#F6B756}}</style></head><body><main>
 <nav><a class="logo" href="./">kip</a><a href="./">Support</a><a href="privacy.html">Privacy</a></nav>
 <h1>Kip privacy policy</h1>
-<p><em>Last updated: 18 October 2026</em></p>
+<p><em>Last updated: 24 October 2026</em></p>
 <p>Kip plans sleep around shift work. It is built to keep your information on your phone.</p>
 <h2>What stays on your phone</h2>
 <p>Your roster, sleep plan, profile answers (sleep need, commute, bedtime and so on), check-ins, tiredness ratings, alarms and settings are stored only on your device. Kip has no accounts and no servers that hold this information. Deleting the app, or using <strong>Profile → Erase my data</strong>, removes it.</p>
@@ -20,18 +20,22 @@ a{color:#B3700F}nav{display:flex;gap:18px;align-items:center;margin-bottom:24px;
 <p>When you choose <strong>Import from a photo or PDF</strong>, the image or file you pick is sent over an encrypted connection to Kip's roster reader. The reader runs on Supabase and passes the image to Anthropic's Claude model, which reads the shift times and sends them back to your phone. Kip does not store the image or the shifts on any server. Anthropic processes the request under its commercial terms, which do not allow it to train models on this data. Nothing is sent unless you choose to import.</p>
 <h2>Notifications, alarms and the lock screen</h2>
 <p>Reminders, alarms, home-screen widgets, the bedtime countdown on your lock screen and the reminder before a free trial ends are all created on your phone by iOS. Their content never leaves your device. When Kip shows its night-time “Back to sleep” screen, it turns your screen brightness down and puts it back when you leave.</p>
+<h2>Live weather</h2>
+<p>If you turn on <strong>Live weather</strong> in Profile, Kip asks for your approximate location and sends it, rounded to about a kilometre, to Apple Weather (WeatherKit) about once an hour while Kip is open. Apple sends back the current weather, which Kip uses to draw its sky and is kept only on your phone. Kip does not store your location and does not send it anywhere else. Turning Live weather off stops this and clears the saved weather.</p>
+<h2>Sleep Focus</h2>
+<p>If you turn on <strong>Sleep Focus at bedtime</strong>, the “Going to sleep” button opens a shortcut you made in Apple's Shortcuts app and passes it the minutes until your wake-up. Nothing else is shared.</p>
 <h2>Purchases</h2>
 <p>Kip Pro is bought through the App Store. Apple handles payment. Kip only learns from Apple whether your subscription is active.</p>
 <h2>What Kip does not do</h2>
 <ul>
 <li>No analytics, tracking or advertising.</li>
 <li>No selling or sharing of personal information.</li>
-<li>No collecting of your name, email, location or contacts.</li>
+<li>No collecting of your name, email or contacts, and no keeping of your location.</li>
 </ul>
 <h2>Children</h2>
 <p>Kip is not directed at children under 13.</p>
 <h2>Changes</h2>
 <p>If this policy changes, the new version will be posted here with a new date.</p>
 <h2>Contact</h2>
-<p>Questions about privacy: <a href="mailto:patrick.george.lee.1@gmail.com">patrick.george.lee.1@gmail.com</a></p>
+<p>Questions about privacy: <a href="mailto:kipsleepplanner@gmail.com">kipsleepplanner@gmail.com</a></p>
 </main></body></html>
