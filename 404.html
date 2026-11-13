@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Kip has moved</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script>
+  // Old links under /Kip/ go to the same page on the new site.
+  var rest = location.pathname.replace(/^\/kip\/?/i, '');
+  location.replace('https://kipsleep.github.io/' + rest + location.search + location.hash);
+</script>
+</head>
+<body style="font-family:-apple-system,system-ui,sans-serif;text-align:center;padding:60px 20px">
+<p>Kip has moved to <a href="https://kipsleep.github.io/">kipsleep.github.io</a>.</p>
+</body>
+</html>

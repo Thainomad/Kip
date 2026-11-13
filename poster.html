@@ -2,83 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<title>Kip has moved</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Kip poster</title>
-<link rel="icon" type="image/png" href="assets/favicon.png">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
-<style>
-@page { size: A4; margin: 0; }
-* { box-sizing: border-box; margin: 0; padding: 0; }
-html, body { background: #E9E4DA; font-family: Nunito, -apple-system, system-ui, sans-serif; color: #1C1F2B; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-.bar { max-width: 210mm; margin: 18px auto; display: flex; gap: 10px; justify-content: flex-end; padding: 0 12px; }
-.bar button, .bar a { font: 800 15px Nunito, sans-serif; border: 0; border-radius: 12px; padding: 10px 16px; background: #1C1F2B; color: #fff; text-decoration: none; cursor: pointer; }
-.bar a { background: #fff; color: #1C1F2B; }
-.page { width: 210mm; height: 297mm; margin: 0 auto 30px; position: relative; overflow: hidden; background: linear-gradient(180deg, #8FCBFF 0%, #DDF1FF 42%, #FFF6E6 42%); box-shadow: 0 20px 60px rgba(0,0,0,.2); }
-.sun { position: absolute; right: 18mm; top: 14mm; width: 34mm; height: 34mm; border-radius: 50%; background: radial-gradient(circle at 40% 38%, #FFE68A, #F7B54A 72%); box-shadow: 0 0 30mm 10mm rgba(255,200,90,.4); }
-.hills { position: absolute; left: 0; right: 0; top: 98mm; height: 30mm; }
-.top { position: absolute; left: 16mm; top: 18mm; right: 60mm; }
-.logo { display: flex; align-items: center; gap: 4mm; font-weight: 900; font-size: 13mm; letter-spacing: -.5mm; }
-.logo img { width: 14mm; height: 14mm; border-radius: 3.5mm; }
-h1 { font-weight: 900; font-size: 15mm; line-height: 1.02; letter-spacing: -.6mm; margin-top: 6mm; }
-h1 mark { background: linear-gradient(transparent 58%, rgba(242,174,69,.7) 58%, rgba(242,174,69,.7) 92%, transparent 92%); color: inherit; }
-.kip { position: absolute; right: 22mm; top: 58mm; width: 62mm; }
-.crew { position: absolute; left: 16mm; right: 16mm; top: 132mm; display: flex; justify-content: space-between; }
-.crew figure { text-align: center; width: 28mm; }
-.crew img { height: 22mm; display: block; margin: 0 auto 1.5mm; }
-.crew figcaption { font-weight: 800; font-size: 3.6mm; }
-.points { position: absolute; left: 16mm; top: 168mm; width: 92mm; list-style: none; }
-.points li { font-weight: 800; font-size: 5mm; line-height: 1.3; padding: 2.4mm 0 2.4mm 10mm; position: relative; }
-.points li span { position: absolute; left: 0; top: 2.2mm; font-size: 5.6mm; }
-.points small { display: block; font-weight: 700; font-size: 3.8mm; color: #5E6374; }
-.qrbox { position: absolute; right: 16mm; top: 164mm; width: 72mm; text-align: center; }
-.qrbox .qr { background: #fff; border-radius: 6mm; padding: 4mm; box-shadow: 0 4mm 12mm rgba(28,31,43,.15); }
-.qrbox .qr img { width: 100%; display: block; }
-.qrbox b { display: block; font-weight: 900; font-size: 6mm; margin-top: 4mm; }
-.qrbox span { display: block; font-weight: 700; font-size: 3.8mm; color: #5E6374; margin-top: 1mm; }
-.foot { position: absolute; left: 0; right: 0; bottom: 0; height: 26mm; background: #1E2563; color: #fff; display: flex; align-items: center; justify-content: space-between; padding: 0 16mm; }
-.foot b { font-weight: 900; font-size: 5.4mm; }
-.foot span { font-weight: 700; font-size: 3.8mm; color: #C9CBEA; text-align: right; line-height: 1.4; }
-@media print { html, body { background: #fff; } .bar { display: none; } .page { margin: 0; box-shadow: none; } }
-@media screen and (max-width: 820px) { .page { transform: scale(calc((100vw - 24px) / 794px)); transform-origin: top left; margin: 0 12px calc((297mm) * ((100vw - 24px) / 794px - 1)) 12px; } }
-</style>
+<meta http-equiv="refresh" content="0; url=https://kipsleep.github.io/poster.html">
+<link rel="canonical" href="https://kipsleep.github.io/poster.html">
+<script>location.replace('https://kipsleep.github.io/poster.html' + location.search + location.hash);</script>
 </head>
-<body>
-<div class="bar"><a href="./">← Back to Kip</a><button onclick="window.print()">Print or save as PDF</button></div>
-<div class="page">
-  <div class="sun"></div>
-  <div class="top">
-    <div class="logo"><img src="assets/icon.png" alt="">kip</div>
-    <h1>Sleep better on <mark>any roster</mark></h1>
-  </div>
-  <img class="kip" src="assets/owl-dance.png" alt="Kip the owl">
-  <svg class="hills" viewBox="0 0 210 30" preserveAspectRatio="none" aria-hidden="true">
-    <path d="M0 12 Q35 2 80 9 T160 7 T210 10 V30 H0 Z" fill="#9ED77A"/>
-    <path d="M0 20 Q55 12 110 18 T210 16 V30 H0 Z" fill="#7DC35B"/>
-    <path d="M0 26 Q70 22 140 25 T210 24 V30 H0 Z" fill="#FFF6E6"/>
-  </svg>
-  <div class="crew">
-    <figure><img src="assets/owl-nurse.png" alt=""><figcaption>Nurses</figcaption></figure>
-    <figure><img src="assets/owl-miner.png" alt=""><figcaption>FIFO</figcaption></figure>
-    <figure><img src="assets/owl-pilot.png" alt=""><figcaption>Pilots</figcaption></figure>
-    <figure><img src="assets/owl-police.png" alt=""><figcaption>Police</figcaption></figure>
-    <figure><img src="assets/owl-paramedic.png" alt=""><figcaption>Paramedics</figcaption></figure>
-    <figure><img src="assets/owl-firefighter.png" alt=""><figcaption>Fire</figcaption></figure>
-  </div>
-  <ul class="points">
-    <li><span>🛏️</span>When to sleep, around every shift<small>Earlies, lates, nights and FIFO swings</small></li>
-    <li><span>😴</span>Naps and coffee cut-offs that fit<small>Set the alarm with one tap</small></li>
-    <li><span>⏰</span>An alarm you can trust<small>With a bedtime countdown on your lock screen</small></li>
-    <li><span>📚</span>Every tip backed by research<small>Your roster and sleep stay on your phone</small></li>
-  </ul>
-  <div class="qrbox">
-    <div class="qr"><img src="assets/kip-qr.png" alt="QR code that opens Kip on the App Store"></div>
-    <b>Scan to get Kip</b>
-    <span>Point your iPhone camera at the code</span>
-  </div>
-  <div class="foot">
-    <b>Free for a week on iPhone</b>
-    <span>No camera handy?<br>thainomad.github.io/Kip</span>
-  </div>
-</div>
+<body style="font-family:-apple-system,system-ui,sans-serif;text-align:center;padding:60px 20px">
+<p>Kip has moved to <a href="https://kipsleep.github.io/poster.html">kipsleep.github.io</a>.</p>
 </body>
 </html>
