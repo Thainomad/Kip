@@ -155,6 +155,12 @@ section { padding: 110px 0; }
 .moon { position: absolute; left: 10%; top: 70px; width: 90px; height: 90px; border-radius: 50%; background: #FFF3DA; box-shadow: inset -20px -8px 0 0 #E7D4AA, 0 0 60px 16px rgba(255,243,218,.25); }
 .star { position: absolute; width: 4px; height: 4px; border-radius: 50%; background: #fff; animation: twinkle 2.4s ease-in-out infinite; }
 @keyframes twinkle { 50% { opacity: .25; } }
+.finale .wrap { position: relative; z-index: 2; }
+#stars { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
+@media (max-width: 760px) {
+  .moon { left: auto; right: 18px; top: 22px; width: 54px; height: 54px; box-shadow: inset -12px -5px 0 0 #E7D4AA, 0 0 40px 10px rgba(255,243,218,.22); }
+  .finale { padding-top: 96px; }
+}
 .finale .sleeper { width: 230px; margin: 50px auto -6px; position: relative; z-index: 2; }
 .finale .hills { position: relative; height: 120px; }
 
