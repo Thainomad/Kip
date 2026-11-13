@@ -222,6 +222,23 @@ section { padding: 110px 0; }
 .kit .pile img { position: absolute; width: 170px; border-radius: 20px; box-shadow: 0 16px 40px rgba(28,31,43,.2); }
 @media (max-width: 900px) { .kit { grid-template-columns: 1fr; padding: 34px 24px; } .kit .pile { height: 300px; max-width: 340px; margin: 0 auto; width: 100%; } }
 
+
+/* scan to download */
+.scan { display: grid; grid-template-columns: auto 1fr; gap: 50px; align-items: center; background: linear-gradient(135deg, #1E2563, #3B2E7A); color: #fff; border-radius: 36px; padding: 50px; box-shadow: var(--shadow); }
+.scan .qr { background: #fff; padding: 16px; border-radius: 28px; box-shadow: 0 20px 50px rgba(0,0,0,.3); }
+.scan .qr img { width: 260px; height: 260px; }
+.scan h2 { font-size: clamp(32px, 4.4vw, 48px); }
+.scan h2 mark { background: linear-gradient(transparent 58%, rgba(242,174,69,.55) 58%, rgba(242,174,69,.55) 92%, transparent 92%); }
+.scan p { color: #C9CBEA; margin: 14px 0 26px; max-width: 28em; }
+.scan .links { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.scan .links a.small { color: #F6B756; font-weight: 800; font-size: 15px; }
+@media (max-width: 760px) { .scan { grid-template-columns: 1fr; text-align: center; padding: 34px 22px; gap: 26px; } .scan .qr { margin: 0 auto; } .scan .qr img { width: 210px; height: 210px; } .scan p { margin-left: auto; margin-right: auto; } .scan .links { justify-content: center; } }
+/* the mini QR beside the hero button, for people reading on a laptop */
+.hero-scan { display: inline-flex; align-items: center; gap: 12px; margin-left: 18px; vertical-align: middle; }
+.hero-scan img { width: 104px; height: 104px; background: #fff; padding: 6px; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,.15); }
+.hero-scan span { font-size: 14px; font-weight: 800; color: #3E4458; line-height: 1.3; }
+@media (max-width: 900px) { .hero-scan { display: none; } }
+
 footer { background: #171C45; color: #C9CBEA; padding: 40px 0 50px; font-size: 15px; }
 footer .wrap { display: flex; flex-wrap: wrap; gap: 18px 30px; align-items: center; }
 footer .logo { color: #fff; font-size: 24px; }
@@ -260,6 +277,7 @@ footer small { flex-basis: 100%; color: #8E93BF; }
         <svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.47.83-.72 0-1.82-.81-2.99-.79-1.54.02-2.96.9-3.75 2.27-1.6 2.78-.41 6.89 1.15 9.14.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.78.74 2.99.72 1.24-.02 2.02-1.12 2.77-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.42-3.66zM14.1 5.86c.63-.77 1.06-1.83.94-2.89-.91.04-2.02.61-2.67 1.37-.58.67-1.1 1.76-.96 2.8 1.02.08 2.05-.52 2.69-1.28z"/></svg>
         <span><small>Download on the</small><b>App Store</b></span>
       </a>
+      <span class="hero-scan"><img src="assets/kip-qr-web.png" alt="QR code to download Kip"><span>Or scan with<br>your iPhone</span></span>
       <p class="note">Free for a week · iPhone</p>
       <div class="chips"><span>👩‍⚕️ Nurses</span><span>⛏️ FIFO</span><span>✈️ Pilots</span><span>🚓 Police</span><span>🚑 Paramedics</span><span>🔥 Fire</span></div>
     </div>
@@ -414,6 +432,28 @@ footer small { flex-basis: 100%; color: #8E93BF; }
   </div>
 </section>
 
+
+<section id="download" style="padding-bottom:40px">
+  <div class="wrap">
+    <div class="scan">
+      <div class="qr"><img src="assets/kip-qr-web.png" alt="QR code that opens Kip on the App Store"></div>
+      <div>
+        <span class="eyebrow" style="color:#F6B756">Get Kip</span>
+        <h2>Point your camera. <mark>Get Kip.</mark></h2>
+        <p>Open the camera on your iPhone, point it at the code and tap the link. It goes straight to Kip on the App Store. Free for a week.</p>
+        <div class="links">
+          <a class="store" href="https://apps.apple.com/app/id6822165601" style="background:#fff;color:#000">
+            <svg viewBox="0 0 24 24" fill="#000" aria-hidden="true"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.47.83-.72 0-1.82-.81-2.99-.79-1.54.02-2.96.9-3.75 2.27-1.6 2.78-.41 6.89 1.15 9.14.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.78.74 2.99.72 1.24-.02 2.02-1.12 2.77-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.42-3.66zM14.1 5.86c.63-.77 1.06-1.83.94-2.89-.91.04-2.02.61-2.67 1.37-.58.67-1.1 1.76-.96 2.8 1.02.08 2.05-.52 2.69-1.28z"/></svg>
+            <span><small>Download on the</small><b>App Store</b></span>
+          </a>
+          <a class="small" href="poster.html">Print a poster →</a>
+          <a class="small" href="assets/kip-qr.png" download>Save the QR code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section style="padding-top:150px">
   <div class="wrap">
     <div class="price">
@@ -439,9 +479,8 @@ footer small { flex-basis: 100%; color: #8E93BF; }
         <ul>
           <li>📱 iPhone app, free for a week</li>
           <li>🦉 Kip the owl puts on your uniform and works your shift</li>
-          <li>🔒 No account, everything stays on your phone</li>
+          <li>🔒 No account; your roster and sleep stay on your phone</li>
         </ul>
-        <a class="btn" href="assets/kip-media-kit.zip" download>⬇️ Download the media kit</a>
         <a class="btn alt" href="mailto:kipsleepplanner@gmail.com?subject=Kip%20collab">✉️ kipsleepplanner@gmail.com</a>
       </div>
       <div class="pile" aria-hidden="true">
